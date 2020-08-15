@@ -1,18 +1,21 @@
 /*eslint-disable*/
 import React from "react";
-import DeleteIcon from "@material-ui/icons/Delete";
-import IconButton from "@material-ui/core/IconButton";
+// import DeleteIcon from "@material-ui/icons/Delete";
+// import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import Tooltip from "@material-ui/core/Tooltip";
+// import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
+import { Apps } from "@material-ui/icons";
+import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
+import EmailIcon from "@material-ui/icons/Email";
+import PhoneIcon from "@material-ui/icons/Phone";
 
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
@@ -29,7 +32,7 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Contact"
+          buttonText="References"
           buttonProps={{
             className: classes.navLink,
             color: "transparent",
@@ -40,38 +43,51 @@ export default function HeaderLinks(props) {
             //   All components
             // </Link>,
             <a
-              href="https://www.linkedin.com/in/chihaby/"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              linkedIn
-            </a>,
-            <a
               href="https://github.com/chihaby"
               target="_blank"
               className={classes.dropdownLink}
             >
               Github
             </a>,
+            <a
+              href="https://www.linkedin.com/in/chihaby/"
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              linkedIn
+            </a>,
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          href=""
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          <FormatListBulletedIcon className={classes.icons} />
+          Resume
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
+        <Button color="transparent" target="_blank" className={classes.navLink}>
+          <EmailIcon className={classes.icons} />
+          chihaby@gmail.com
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button color="transparent" target="_blank" className={classes.navLink}>
+          <PhoneIcon className={classes.icons} />
+          (510) 630-9741
+        </Button>
+      </ListItem>
+      {/* <ListItem className={classes.listItem}>
+        <Tooltip title="Delete">
           <IconButton aria-label="Delete">
             <DeleteIcon />
           </IconButton>
-        </Tooltip>*/}
+        </Tooltip>
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
@@ -121,7 +137,7 @@ export default function HeaderLinks(props) {
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 }
