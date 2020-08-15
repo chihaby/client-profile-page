@@ -22,6 +22,7 @@ import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
 import Button from "../CustomButtons/Button";
 
 import styles from "../../assets/jss/material-kit-react/components/headerLinksStyle.js";
+import pdf from "../../assets/files/_Rad.pdf";
 
 const useStyles = makeStyles(styles);
 
@@ -60,12 +61,7 @@ export default function HeaderLinks(props) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href=""
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
+        <Button color="transparent" target="_blank" className={classes.navLink}>
           <FormatListBulletedIcon className={classes.icons} />
           Resume
         </Button>

@@ -4,9 +4,10 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
+import LanguageIcon from "@material-ui/icons/Language";
+import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
+import PersonIcon from "@material-ui/icons/Person";
+
 // core components
 import Header from "./components/Header/Header.js";
 import Footer from "./components/Footer/Footer.js";
@@ -103,7 +104,7 @@ export default function ProfilePage(props) {
                   tabs={[
                     {
                       tabButton: "Interactive",
-                      tabIcon: Camera,
+                      tabIcon: LanguageIcon,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
@@ -135,7 +136,7 @@ export default function ProfilePage(props) {
                     },
                     {
                       tabButton: "Business",
-                      tabIcon: Palette,
+                      tabIcon: BusinessCenterIcon,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
@@ -172,7 +173,7 @@ export default function ProfilePage(props) {
                     },
                     {
                       tabButton: "Private",
-                      tabIcon: Favorite,
+                      tabIcon: PersonIcon,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
