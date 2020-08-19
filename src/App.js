@@ -20,8 +20,9 @@ import Parallax from "./components/Parallax/Parallax.js";
 import profile from "./assets/img/faces/radouane.JPG";
 
 import park_plaza_motors from "./assets/img/examples/park_plaza_motors.jpg";
-import baby_names from "./assets/img/examples/baby_names.jpg";
-import marketplace from "./assets/img/examples/marketplace.jpg";
+import baby_names from "./assets/img/examples/baby_names.jpeg";
+import marketplace from "./assets/img/examples/marketplace.png";
+import carpool from "./assets/img/examples/carpool.jpeg";
 import puppy from "./assets/img/examples/puppy.jpg";
 import lunch from "./assets/img/examples/lunch.png";
 import forum from "./assets/img/examples/forum.jpeg";
@@ -133,15 +134,15 @@ export default function ProfilePage(props) {
                             </a>
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
-                            <h6>All Dogs</h6>
+                            <h6>Carpool UI/UX</h6>
                             <a
                               target="_blank"
                               rel="noopener noreferrer"
-                              href="https://chihaby.github.io/puppy-finder/"
+                              href="https://www.youtube.com/watch?v=SUr68YFo_rI"
                             >
                               <img
-                                alt="puppy"
-                                src={puppy}
+                                alt="carpool"
+                                src={carpool}
                                 className={navImageClasses}
                               />
                             </a>
@@ -154,6 +155,18 @@ export default function ProfilePage(props) {
                               <img
                                 alt="marketplace"
                                 src={marketplace}
+                                className={navImageClasses}
+                              />
+                            </a>
+                            <h6>All Dogs</h6>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href="https://chihaby.github.io/puppy-finder/"
+                            >
+                              <img
+                                alt="puppy"
+                                src={puppy}
                                 className={navImageClasses}
                               />
                             </a>
