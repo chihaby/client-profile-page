@@ -28,6 +28,7 @@ const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
   const classes = useStyles();
+
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
@@ -59,12 +60,6 @@ export default function HeaderLinks(props) {
             </a>,
           ]}
         />
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button color="transparent" target="_blank" className={classes.navLink}>
-          <FormatListBulletedIcon className={classes.icons} />
-          Resume
-        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button color="transparent" target="_blank" className={classes.navLink}>

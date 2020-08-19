@@ -51,11 +51,6 @@ export default function Footer(props) {
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a className={classes.block} target="_blank">
-                Resume
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a className={classes.block} target="_blank">
                 chihaby@gmail.com
               </a>
             </ListItem>
