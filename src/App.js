@@ -11,7 +11,7 @@ import PersonIcon from "@material-ui/icons/Person";
 // core components
 import Header from "./components/Header/Header.js";
 import Footer from "./components/Footer/Footer.js";
-import Button from "./components/CustomButtons/Button.js";
+// import Button from "./components/CustomButtons/Button.js";
 import GridContainer from "./components/Grid/GridContainer.js";
 import GridItem from "./components/Grid/GridItem.js";
 import HeaderLinks from "./components/Header/HeaderLinks.js";
@@ -20,16 +20,14 @@ import Parallax from "./components/Parallax/Parallax.js";
 
 import profile from "./assets/img/faces/radouane.JPG";
 
-import studio1 from "./assets/img/examples/studio-1.jpg";
-import studio2 from "./assets/img/examples/studio-2.jpg";
-import studio3 from "./assets/img/examples/studio-3.jpg";
-import studio4 from "./assets/img/examples/studio-4.jpg";
-import studio5 from "./assets/img/examples/studio-5.jpg";
-import work1 from "./assets/img/examples/olu-eletu.jpg";
-import work2 from "./assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "./assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "./assets/img/examples/mariya-georgieva.jpg";
-import work5 from "./assets/img/examples/clem-onojegaw.jpg";
+import park_plaza_motors from "./assets/img/examples/park_plaza_motors.jpg";
+import baby_names from "./assets/img/examples/baby_names.jpg";
+import marketplace from "./assets/img/examples/marketplace.jpg";
+import puppy from "./assets/img/examples/puppy.jpg";
+import lunch from "./assets/img/examples/lunch.png";
+import forum from "./assets/img/examples/forum.jpeg";
+import list from "./assets/img/examples/list.jpeg";
+import blog from "./assets/img/examples/blog.jpeg";
 
 import styles from "./assets/jss/material-kit-react/views/profilePage.js";
 
@@ -70,7 +68,7 @@ export default function ProfilePage(props) {
                   <div className={classes.name}>
                     <h3 className={classes.title}>Radouane Chihaby</h3>
                     <h6>Web Developer</h6>
-                    <Button
+                    {/* <Button
                       // social-media buttons hidden
                       // style={{ backgroundColor: "red" }}
                       justIcon
@@ -84,7 +82,7 @@ export default function ProfilePage(props) {
                     </Button>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-facebook"} />
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               </GridItem>
@@ -103,98 +101,148 @@ export default function ProfilePage(props) {
                   color="primary"
                   tabs={[
                     {
-                      tabButton: "Interactive",
+                      tabButton: "Business",
+                      tabIcon: BusinessCenterIcon,
+
+                      tabContent: (
+                        <GridContainer justify="center">
+                          <GridItem xs={12} sm={12} md={4}>
+                            <h6>Auto Dealership</h6>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href="https://ppmmotors.com/"
+                            >
+                              <img
+                                alt="car"
+                                src={park_plaza_motors}
+                                className={navImageClasses}
+                              />
+                            </a>
+
+                            <h6>Baby Names</h6>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href="https://littlepeanut.net/"
+                            >
+                              <img
+                                alt="names"
+                                src={baby_names}
+                                className={navImageClasses}
+                              />
+                            </a>
+                          </GridItem>
+                          <GridItem xs={12} sm={12} md={4}>
+                            <h6>All Dogs</h6>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href="https://chihaby.github.io/puppy-finder/"
+                            >
+                              <img
+                                alt="puppy"
+                                src={puppy}
+                                className={navImageClasses}
+                              />
+                            </a>
+                            <h6>Marketplace</h6>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href="https://onlinestore-next-prod.herokuapp.com/"
+                            >
+                              <img
+                                alt="marketplace"
+                                src={marketplace}
+                                className={navImageClasses}
+                              />
+                            </a>
+                          </GridItem>
+                        </GridContainer>
+                      ),
+                    },
+                    {
+                      tabButton: "Social",
                       tabIcon: LanguageIcon,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio2}
-                              className={navImageClasses}
-                            />
+                            <h6>Forum</h6>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href="https://think-piece-live-dc187.web.app/"
+                            >
+                              <img
+                                alt="forum"
+                                src={forum}
+                                className={navImageClasses}
+                              />
+                            </a>
+
+                            {/* <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href="https://think-piece-live-dc187.web.app/"
+                            >
+                              <img
+                                alt="..."
+                                src={work3}
+                                className={navImageClasses}
+                              />
+                            </a> */}
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio5}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio4}
-                              className={navImageClasses}
-                            />
+                            <h6>Lunch Vote</h6>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href="https://lunch-rush-4d021.web.app/"
+                            >
+                              <img
+                                alt="lunch"
+                                src={lunch}
+                                className={navImageClasses}
+                              />
+                            </a>
                           </GridItem>
                         </GridContainer>
                       ),
                     },
                     {
-                      tabButton: "Business",
-                      tabIcon: BusinessCenterIcon,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work3}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work5}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      ),
-                    },
-                    {
-                      tabButton: "Private",
+                      tabButton: "Personal",
                       tabIcon: PersonIcon,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio3}
-                              className={navImageClasses}
-                            />
+                            <h6>Personal Blog</h6>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href="https://finesly.com/"
+                            >
+                              <img
+                                alt="blog"
+                                src={blog}
+                                className={navImageClasses}
+                              />
+                            </a>
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
+                            <h6>Shopping List</h6>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href="https://intense-ocean-86370.herokuapp.com/"
+                            >
+                              <img
+                                alt="shopping-list"
+                                src={list}
+                                className={navImageClasses}
+                              />
+                            </a>
+                            {/* <img
                               alt="..."
                               src={work1}
                               className={navImageClasses}
@@ -203,7 +251,7 @@ export default function ProfilePage(props) {
                               alt="..."
                               src={studio1}
                               className={navImageClasses}
-                            />
+                            /> */}
                           </GridItem>
                         </GridContainer>
                       ),
