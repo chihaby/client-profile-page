@@ -134,7 +134,7 @@ export default function ProfilePage(props) {
                             </a>
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
-                            <h6>Carpool UI/UX</h6>
+                            <h6>Carpool UI-UX</h6>
                             <a
                               target="_blank"
                               rel="noopener noreferrer"

@@ -13,7 +13,6 @@ import ListItem from "@material-ui/core/ListItem";
 
 // @material-ui/icons
 import { Apps } from "@material-ui/icons";
-import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
 
@@ -22,7 +21,6 @@ import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
 import Button from "../CustomButtons/Button";
 
 import styles from "../../assets/jss/material-kit-react/components/headerLinksStyle.js";
-import pdf from "../../assets/files/_Rad.pdf";
 
 const useStyles = makeStyles(styles);
 
