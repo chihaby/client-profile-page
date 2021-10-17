@@ -24,13 +24,14 @@ import profile from './assets/img/faces/radouane.jpg';
 import flyingcarpet from './assets/img/examples/flying-carpet.jpg';
 import onlinestore from './assets/img/examples/online-store.jpg';
 import carpool from './assets/img/examples/carpool.jpg';
-import puppy from './assets/img/examples/puppy.jpg';
+// import puppies from './assets/img/examples/puppies.jpg';
 import lunch from './assets/img/examples/lunch.jpg';
 import forum from './assets/img/examples/forum.jpg';
 import blog from './assets/img/examples/blog.jpg';
-import mechanic from './assets/img/examples/mechanic.jpg';
+// import mechanic from './assets/img/examples/mechanic.jpg';
 import education from './assets/img/examples/education.jpg';
-import baby_names from './assets/img/examples/baby_names.jpeg';
+// import baby_names from './assets/img/examples/baby_names.jpeg';
+import dealership from './assets/img/examples/dealership.jpg';
 
 import styles from './assets/jss/material-kit-react/views/profilePage.js';
 
@@ -110,7 +111,46 @@ export default function ProfilePage(props) {
                       tabContent: (
                         <GridContainer justify='center'>
                           <GridItem xs={12} sm={12} md={4}>
-                              <h6>Rug Store</h6>
+                            <h6>Auto Dealership</h6>
+                            <a
+                              target='_blank'
+                              rel='noopener noreferrer'
+                              href='https://ppmmotors.com/'
+                            >
+                              <img
+                                alt='dealership'
+                                src={dealership}
+                                className={navImageClasses}
+                              />
+                            </a>
+                            <h6>Furniture Store</h6>
+                            <a
+                              target='_blank'
+                              rel='noopener noreferrer'
+                              href='https://onlinestore-next-prod.herokuapp.com/'
+                            >
+                              <img
+                                alt='marketplace'
+                                src={onlinestore}
+                                className={navImageClasses}
+                              />
+                            </a>
+
+                            <h6>Blog Site</h6>
+                            <a
+                              target='_blank'
+                              rel='noopener noreferrer'
+                              href='https://finesly.com/'
+                            >
+                              <img
+                                alt='blog'
+                                src={blog}
+                                className={navImageClasses}
+                              />
+                            </a>
+                          </GridItem>
+                          <GridItem xs={12} sm={12} md={4}>
+                            <h6>Rug Store</h6>
                             <a
                               target='_blank'
                               rel='noopener noreferrer'
@@ -123,8 +163,31 @@ export default function ProfilePage(props) {
                               />
                             </a>
 
-                              
-                           <h6>Forum</h6>
+                            {/* <h6>Puppies</h6>
+                            <a
+                              target='_blank'
+                              rel='noopener noreferrer'
+                              href='https://chihaby.github.io/puppy-finder/'
+                            >
+                              <img
+                                alt='puppies'
+                                src={puppies}
+                                className={navImageClasses}
+                              />
+                            </a> */}
+                            <h6>Carpool UI Video</h6>
+                            <a
+                              target='_blank'
+                              rel='noopener noreferrer'
+                              href='https://www.youtube.com/watch?v=SUr68YFo_rI'
+                            >
+                              <img
+                                alt='carpool'
+                                src={carpool}
+                                className={navImageClasses}
+                              />
+                            </a>
+                            <h6>Forum Platform</h6>
                             <a
                               target='_blank'
                               rel='noopener noreferrer'
@@ -137,36 +200,28 @@ export default function ProfilePage(props) {
                               />
                             </a>
 
-                           
-
-                      
+                            {/* <h6>Baby Names</h6>
+                            <a
+                              target='_blank'
+                              rel='noopener noreferrer'
+                              href='https://littlepeanut.net/'
+                            >
+                              <img
+                                alt='names'
+                                src={baby_names}
+                                className={navImageClasses}
+                              />
+                            </a> */}
                           </GridItem>
+                        </GridContainer>
+                      ),
+                    },
+                    {
+                      tabButton: 'Client',
+                      tabIcon: LanguageIcon,
+                      tabContent: (
+                        <GridContainer justify='center'>
                           <GridItem xs={12} sm={12} md={4}>
-                         <h6>Online Store</h6>
-                            <a
-                              target='_blank'
-                              rel='noopener noreferrer'
-                              href='https://onlinestore-next-prod.herokuapp.com/'
-                            >
-                              <img
-                                alt='marketplace'
-                                src={onlinestore}
-                                className={navImageClasses}
-                              />
-                            </a>
-                         <h6>Carpool UI Video</h6>
-                            <a
-                              target='_blank'
-                              rel='noopener noreferrer'
-                              href='https://www.youtube.com/watch?v=SUr68YFo_rI'
-                            >
-                              <img
-                                alt='carpool'
-                                src={carpool}
-                                className={navImageClasses}
-                              />
-                            </a>
-
                             <h6>Lunch Vote</h6>
                             <a
                               target='_blank'
@@ -179,32 +234,7 @@ export default function ProfilePage(props) {
                                 className={navImageClasses}
                               />
                             </a>
-                         
-                          </GridItem>
-                        </GridContainer>
-                      ),
-                    },
-                    {
-                      tabButton: 'Client',
-                      tabIcon: LanguageIcon,
-                      tabContent: (
-                        <GridContainer justify='center'>             
-                          <GridItem xs={12} sm={12} md={4}>
-
-                            <h6>Dog Breeds</h6>
-                            <a
-                              target='_blank'
-                              rel='noopener noreferrer'
-                              href='https://chihaby.github.io/puppy-finder/'
-                            >
-                              <img
-                                alt='puppy'
-                                src={puppy}
-                                className={navImageClasses}
-                              />
-                            </a>
-                       
-                            <h6>Mechanic</h6>
+                            {/* <h6>Mechanic</h6>
                             <a
                               target='_blank'
                               rel='noopener noreferrer'
@@ -215,24 +245,10 @@ export default function ProfilePage(props) {
                                 src={mechanic}
                                 className={navImageClasses}
                               />
-                            </a>    
-            
+                            </a> */}
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
-                           <h6>Blog</h6>
-                            <a
-                              target='_blank'
-                              rel='noopener noreferrer'
-                              href='https://finesly.com/'
-                            >
-                              <img
-                                alt='blog'
-                                src={blog}
-                                className={navImageClasses}
-                              />
-                            </a>
-                     
-                           <h6>Education</h6>
+                            <h6>Education</h6>
                             <a
                               target='_blank'
                               rel='noopener noreferrer'
@@ -243,20 +259,7 @@ export default function ProfilePage(props) {
                                 src={education}
                                 className={navImageClasses}
                               />
-                            </a>      
-                            
-                          <h6>Baby Names</h6>
-                            <a
-                              target='_blank'
-                              rel='noopener noreferrer'
-                              href='https://littlepeanut.net/'
-                            >
-                              <img
-                                alt='names'
-                                src={baby_names}
-                                className={navImageClasses}
-                              />
-                            </a> 
+                            </a>
                           </GridItem>
                         </GridContainer>
                       ),
